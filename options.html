@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <!-- vim:set ai et shiftwidth=4 softtabstop=4 : -->
+    <head>
+        <meta charset="utf-8">
+        <style>
+            #error{
+                color: red;
+            }
+
+            .hidden{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+                <div id="error" class="hidden">
+                    Maximum days must be between 1 and 366
+                </div>
+                <label>Maximum days to look back</label>
+                <input type="number" id="maxDays" >
+                <button type="submit">Save</button>
+        </form>
+        <script src="options.js"></script>
+    </body>
+</html>

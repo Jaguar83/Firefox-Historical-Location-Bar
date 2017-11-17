@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "version": "0.1.1",
+    "name": "Historical Location Bar",
+    "short_name": "Hist Loc Bar",
+    "applications": {
+        "gecko": {
+            "id": "histlocbar@jaguarfirefoxext.net"
+        }
+    },
+    "omnibox": {
+        "keyword": "hist"
+    },
+    "permissions": [
+        "history",
+        "storage"
+    ],
+    "background":{
+        "scripts": [
+            "histloc.js"
+        ]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    }
+}
